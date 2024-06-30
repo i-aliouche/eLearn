@@ -1,0 +1,530 @@
+:root {
+  --dark: #14171d;
+  --gris: #ffffffbf;
+  --orange-dark: #fc9928;
+  --orange-light: #fab260;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* =============================== */
+/* ======= Start Frameworks ======== */
+/* =============================== */
+
+/* ===== Start Button ===== */
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: none;
+}
+.btn-1 {
+  background-color: var(--orange-dark);
+  padding: 4px 15px;
+  color: white;
+  transition: 0.6s;
+}
+.btn-1:hover {
+  background-color: white;
+  border: 1px solid var(--orange-dark);
+  color: var(--orange-dark);
+}
+.btn-2 {
+  background-color: white;
+  border: 1px solid var(--gris);
+  padding: 4px 15px;
+  color: var(--dark);
+  transition: 0.6s;
+}
+.btn-2:hover {
+  background-color: var(--orange-dark);
+  border-color: var(--orange-dark);
+  color: white;
+}
+/* ===== End Button ===== */
+
+/* ===== Start Card ===== */
+.card {
+  transition: 0.6s;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.card .card-date {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--orange-dark);
+  margin-bottom: 5px;
+}
+/* ===== End Card ===== */
+
+/* ===== Start Banner ===== */
+.page-banner {
+  position: relative;
+  z-index: 0;
+  background: center / cover no-repeat;
+  padding: 120px 0 60px;
+}
+.page-banner:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: var(--dark);
+  opacity: 0.6;
+}
+.page-banner h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  position: relative;
+  padding-left: 60px;
+}
+.page-banner h2::before {
+  content: "";
+  background-color: var(--orange-dark);
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  height: 7px;
+  width: 50px;
+}
+@media (max-width: 768px) {
+  .page-banner h2 {
+    font-size: 2.5rem;
+  }
+}
+/* ===== End Banner ===== */
+
+/* ===== Start Meta-Box ===== */
+.metabox {
+  background-color: var(--orange-dark);
+  display: inline-block;
+  padding: 0;
+  border-radius: 3px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.metabox p {
+  margin-bottom: 0;
+}
+.metabox p a {
+  background-color: var(--dark);
+  display: inline-block;
+  border-radius: 3px 0 0 3px;
+}
+.metabox p span {
+  color: var(--dark);
+}
+/* ===== End Meta-Box ===== */
+
+/* ==== Start Pagination ==== */
+.page-link {
+  color: var(--dark);
+}
+.page-link:hover {
+  color: var(--orange-dark);
+}
+.page-link:focus {
+  color: var(--orange-dark);
+  background-color: #e9ecef;
+  box-shadow: none;
+}
+.page-item.active .page-link {
+  color: #fff;
+  background-color: var(--orange-dark);
+  border-color: var(--orange-dark);
+}
+a:-webkit-any-link:focus-visible {
+  outline: none;
+}
+/* ===== End Pagination ===== */
+
+/* ======== Start Scroll Bar ======== */
+::-webkit-scrollbar {
+  width: 11px;
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--orange-dark);
+  border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--orange-light);
+}
+/* ======== End Scroll Bar ======== */
+
+/* =============================== */
+/* ======= End Frameworks ======== */
+/* =============================== */
+
+/* =============================== */
+/* ====== Start header.php ======= */
+/* =============================== */
+
+/* ===== Start NavBar ===== */
+.navbar {
+  background-color: var(--dark);
+}
+.navbar-nav .nav-link {
+  color: white;
+  transition: 0.6s;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--orange-dark);
+}
+.navbar-nav .active {
+  color: var(--orange-dark);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+/* ===== End NavBar ===== */
+
+/* =============================== */
+/* ======= End header.php ======== */
+/* =============================== */
+
+/* =============================== */
+/* ====== Start footer.php ======= */
+/* =============================== */
+
+/* ===== Start Footer ===== */
+footer {
+  background-color: var(--dark);
+  color: var(--gris);
+}
+footer h4 {
+  color: var(--orange-dark);
+  font-weight: 600;
+}
+footer .info .info-contact svg {
+  color: var(--orange-dark);
+}
+footer .social-icons a {
+  text-decoration: none;
+  color: var(--gris);
+  transition: 0.6s;
+}
+footer .social-icons a:hover,
+footer .social-icons a:focus {
+  color: white;
+}
+footer .links ul a {
+  color: var(--gris);
+  text-decoration: none;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: 0.3s;
+}
+footer .links ul a:hover,
+footer .links ul a:focus {
+  color: white;
+}
+footer .links ul svg {
+  font-size: 0.8rem;
+  color: var(--orange-dark);
+}
+footer .work-day ul span {
+  font-weight: 800;
+  letter-spacing: 1px;
+  width: 150px;
+  display: inline-block;
+}
+/* ===== End Footer ===== */
+
+/* =============================== */
+/* ======= End footer.php ======== */
+/* =============================== */
+
+/* =============================== */
+/* ==== Start front-page.php ===== */
+/* =============================== */
+
+/* ===== Start Hero Section ===== */
+.hero {
+  position: relative;
+  z-index: 1;
+  background: center / cover no-repeat;
+  padding: 170px 0 180px;
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: var(--dark);
+  opacity: 0.6;
+}
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.17);
+}
+.hero-content h1 span {
+  color: var(--orange-dark);
+}
+.hero-content p {
+  font-size: 1.4rem;
+}
+.form-input {
+  position: relative;
+}
+.form-input input {
+  background-color: white;
+  color: var(--dark);
+  height: 48px;
+  width: 100%;
+  border: none;
+  padding-left: 40px;
+  padding-right: 120px;
+}
+.form-input input:focus-visible {
+  outline: none;
+}
+.form-input button.btn {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 120px;
+  height: calc(100% - 8px);
+}
+.form-input svg {
+  position: absolute;
+  left: 12px;
+  top: 15px;
+  color: var(--dark);
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0 80px;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .form-input input {
+    padding-left: 10px;
+  }
+  .form-input svg {
+    display: none;
+  }
+}
+/* ===== End Hero Section ===== */
+
+/* ===== Start Title ===== */
+.title h2 {
+  color: var(--orange-dark);
+  font-size: 3rem;
+  font-weight: 800;
+  position: relative;
+}
+.title h2::before {
+  content: "";
+  background-color: rgb(34, 34, 34);
+  width: 1px;
+  height: 25px;
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* ===== End Title ===== */
+
+/* ===== Start Event ===== */
+.card-body h4 a {
+  color: var(--dark);
+  font-weight: 700;
+  transition: 0.3s;
+}
+.card-body h4 a:hover {
+  color: var(--orange-dark);
+}
+.card-body p {
+  color: rgba(0, 0, 0, 0.75);
+}
+.event-date {
+  background-color: var(--orange-dark);
+}
+.past-events a {
+  color: var(--orange-dark);
+  font-weight: 500;
+}
+/* ===== End Event ===== */
+
+/* =============================== */
+/* ===== End front-page.php ====== */
+/* =============================== */
+
+/* =============================== */
+/* ======= Start page.php ======== */
+/* =============================== */
+
+/* ===== Start metabox ===== */
+.page-pos {
+  position: absolute;
+  top: -48px;
+  transform: translateY(-50%);
+}
+/* ====== End metabox ====== */
+
+/* ===== Start Card ===== */
+.page-section .card:hover {
+  box-shadow: none;
+}
+.card-header {
+  background-color: var(--dark);
+}
+.list-group-item {
+  transition: 0.6s;
+}
+.list-group-item:hover {
+  background-color: var(--orange-dark);
+}
+.list-group-item:hover a {
+  color: white;
+}
+.list-group-item a {
+  color: var(--dark);
+  text-decoration: none;
+  transition: 0.3s;
+}
+/* ====== End Card ====== */
+
+/* =============================== */
+/* ======== End page.php ========= */
+/* =============================== */
+
+/* =============================== */
+/* ======= Start index.php ======= */
+/* =============================== */
+.card-body .card-date a {
+  text-decoration: none;
+  color: var(--orange-dark);
+}
+/* =============================== */
+/* ======== End index.php ======== */
+/* =============================== */
+
+/* =============================== */
+/* ====== Start single.php ======= */
+/* =============================== */
+
+/* ===== Start metabox ===== */
+.single-pos {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+.single-pos span a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  padding-right: 5px;
+}
+.single-pos .post-categories a {
+  text-decoration: none;
+  list-style: none;
+}
+/* ===== End metabox ===== */
+
+/* ===== Start Post Meta ===== */
+.post-meta svg {
+  color: var(--orange-dark);
+}
+.post-meta li span {
+  color: var(--orange-dark);
+  font-weight: 600;
+}
+.post-meta li a {
+  color: var(--orange-dark);
+  font-weight: 600;
+  text-decoration: none;
+  list-style: none;
+}
+/* ===== End Post Meta ===== */
+
+/* =============================== */
+/* ======= End single.php ======== */
+/* =============================== */
+
+/* =============================== */
+/* === Start single-teacher.php == */
+/* =============================== */
+
+/* ==== Start Teacher Thumb ==== */
+.teach-thumb {
+  position: relative;
+  max-width: 370px;
+  margin: auto;
+}
+.teach-thumb::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  border-right: 5px solid var(--orange-dark);
+  border-bottom: 5px solid var(--orange-dark);
+  height: 85%;
+  width: 100%;
+}
+.teach-info h6 {
+  color: var(--orange-dark);
+}
+/* ===== End Teacher Thumb ===== */
+
+/* =============================== */
+/* ==== End single-teacher.php === */
+/* =============================== */
+
+/* =============================== */
+/* == Start archive-course.php === */
+/* =============================== */
+/* ===== Start Card ===== */
+.card .course-letter {
+  background-color: var(--orange-dark);
+  max-width: 10%;
+}
+/* ===== End Card ===== */
+/* =============================== */
+/* === End archive-course.php === */
+/* =============================== */
+
+/* =============================== */
+/* == Start 404.php == */
+/* =============================== */
+.not-found-page h1 {
+  font-size: 200px;
+  font-weight: 700;
+  color: var(--dark);
+}
+.not-found-page h2 {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--orange-dark);
+  padding: 25px 0;
+}
+/* =============================== */
+/* === End 404.php === */
+/* =============================== */
