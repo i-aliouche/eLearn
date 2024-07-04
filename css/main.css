@@ -304,6 +304,49 @@ footer .work-day ul span {
   color: var(--dark);
   font-size: 20px;
 }
+.suggestion-box {
+  display: none;
+  text-align: start;
+  padding: 39px 17px 13px 15px;
+  position: absolute;
+  top: 47%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid var(--dark);
+  z-index: -1;
+}
+.suggestion-box.active {
+  display: block;
+}
+.suggestion-box h5 {
+  color: var(--orange-dark);
+  font-size: 1.2rem;
+}
+.loader {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 12px;
+  width: 25px;
+  height: 25px;
+  border: 5px solid white;
+  border-bottom-color: var(--orange-dark);
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader.active {
+  display: inline-block;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 @media (max-width: 992px) {
   .hero-content h1 {
@@ -325,7 +368,7 @@ footer .work-day ul span {
     font-size: 1rem;
   }
   .form-input input {
-    padding-left: 10px;
+    padding-left: 15px;
   }
   .form-input svg {
     display: none;

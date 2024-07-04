@@ -13,9 +13,11 @@
             <p class="text-white opacity-75">Discover courses that align with your interests</p>
             <form action="#">
                 <div class="form-input">
-                    <input class="rounded-pill" type="text" name="search" placeholder="Enter your keyword...">
+                    <input class="rounded-pill" type="text" name="search" placeholder="Enter your keyword..." autocomplete="off">
                     <button class="btn rounded-pill btn-1 fw-bold" type="submit">Search</button>
                     <i class="fas fa-search"></i>
+                    <div class="loader"></div>
+                    <div id="suggestion-box" class="suggestion-box"></div>
                 </div>
             </form>
         </div>
